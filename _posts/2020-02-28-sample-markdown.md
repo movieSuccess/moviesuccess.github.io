@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blog Post: 10 raisons pourquoi on doit avoir 100 % comme grade
+title: 10 raisons pourquoi on doit avoir 100 % comme grade
 subtitle: On est des bg
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
