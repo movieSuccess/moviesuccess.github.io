@@ -289,7 +289,6 @@ exclude:
   - LICENSE
   - README.md
   - screenshot.png
-  - aboutme.md
   - docs/
 
 plugins:
