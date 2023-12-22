@@ -20,7 +20,7 @@ Welcome to "Cinematic Alchemy: Ingredients for Movie Magic," a project unravelin
 
 Concretely, we want to test the different relationships between the variables. The following causal diagrams illustrate the different links that will be investigated along the data story.
 
-<img src="assets/img/causal_diagram.jpeg" width=500px class="center"/>
+<img src="assets/img/causal_diagram.jpg" width=500px class="center"/>
 
 Through the scrolling of this website, you will acquire the knowledge that will promote you from a novice movie cooker to a gastronomic producer. 
 
@@ -28,7 +28,7 @@ Through the scrolling of this website, you will acquire the knowledge that will 
 
 One might wonder if it is really necessary to consider both metrics for success. It is a fair question to be asked since one could think that they reflect the same phenomenon. But before solving such a mystery, one needs to think about which rating would make sense. There are two main types: The critic score and the audience rating. Should we consider both?
 
-<img src="assets/img/box_office_rating_correlation.png" width=500px class="center"/>
+<img src="assets/img/Box_office_rating_correlation.png" width=500px class="center"/>
 
 By standardising the data, one can read the correlation coefficients between the success metrics on the plot which is given by the slope of the line given by the OLS.
  
