@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cinematic Alchemy, Ingredients for Movie Magic 🧙‍♂
-subtitle: How to increase movie profitability
+subtitle: How to make a movie successful
 cover-img: /assets/img/clap.png
 thumbnail-img: /assets/img/clap.png
 share-img: /assets/img/clap.png
@@ -117,7 +117,7 @@ As seen in our causal diagrams, we suspect that movie length influences the infl
 
 <img src="assets/img/Mean_Revenue_Per_Genre_And_Length.png" width=1000px class="center"/>
 
-Then we performed a 1-to-1 matching to get an equal quantity of same genre movies for very long and long movies. We do so such that a positive and negative influence on inflated revenue for 2 different movie genres don't cancel eachother out: we want to observe both!🙂
+Then we performed a 1-to-1 matching to get an equal quantity of same genre movies for very long and long movies. We do so such that a positive and negative influence on inflated revenue for 2 different movie genres don't cancel eachother out: we want to observe both!
 
 Below you can see the mean inflated revenue for each genre cluster we computed. More importantly, we take the mean for both long and very long movies contained in our one-to-one matching to get an equal quantity of long and very long movies for each genre cluster, in order to compare them and observe any financial effects of making longer and longer movies. We see that for the vast majority of genres, very long movies tend to make more mean inflated revenue than long movies. This aligns with what we predicted.
 
