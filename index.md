@@ -20,9 +20,17 @@ Welcome to "Cinematic Alchemy: Ingredients for Movie Magic," a project unravelin
 
 Through the scrolling of this website, you will acquire the knowledge that will promote you from a novice movie cooker to a gastronomic producer. 
 
-## Non-correlation scores (Why two metrics?/Success)
+## Complementary metrics for a success of your taste
 
-Inflation revenue
+One might wonder if it is really necessary to consider both metrics for success. It is a fair question to be asked since one could think that they reflect the same phenomenon. But before solving such a mystery, one needs to think about which rating would make sense. There are two main types: The critic score and the audience rating. Should we consider both?
+
+<img src="assets/img/success_correlation.png" width=500px class="center"/>
+
+By standardising the data, one can read the correlation coefficients between the success metrics on the plot which is given by the slope of the line given by the OLS.
+ 
+Where the ratings are quite well correlated, the audience score doesn’t seem to have any link with the box office revenue. Therefore, we will keep track of the audience rating and of the financial metric.
+
+## Inflation revenue
 In order to compare movie revenue across the years, we need to take inflation into account. First, we obtain the inflation data from the CPI python library. Then, we create an inflated revenue column in our dataset, where we adapt the movie box office revenue in today’s value. We can therefore compare 
 
 ## Inflation analysis
