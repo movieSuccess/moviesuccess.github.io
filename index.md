@@ -20,7 +20,7 @@ Welcome to "Cinematic Alchemy: Ingredients for Movie Magic," a project unravelin
 
 Concretely, we want to test the different relationships between the variables. The following causal diagrams illustrate the different links that will be investigated along the data story.
 
-<img src="assets/img/causal_diagram.jpg" width=1500px class="center"/>
+<img src="assets/img/causal_diagram.jpg" class="center"/>
 
 Through the scrolling of this website, you will acquire the knowledge that will promote you from a novice movie cooker to a gastronomic producer. 
 
