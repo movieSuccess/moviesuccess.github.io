@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Cinematic Alchemy, Ingredients for Movie Magic 🧙‍♂ :alembic:
+title: Cinematic Alchemy, Ingredients for Movie Magic 🧙‍♂ &#9658;
 subtitle: How to increase movie profitability
 cover-img: /assets/img/clap.png
 thumbnail-img: /assets/img/clap.png
