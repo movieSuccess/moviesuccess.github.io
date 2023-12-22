@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Cinematic Alchemy, Ingredients for Movie Magic 🧙‍♂ &#9658;
+title: Cinematic Alchemy, Ingredients for Movie Magic 🧙‍♂
 subtitle: How to increase movie profitability
 cover-img: /assets/img/clap.png
 thumbnail-img: /assets/img/clap.png
@@ -14,9 +14,13 @@ In the dynamic and fiercely competitive realm of the film industry, where artist
 
 Through meticulous examination of movie data which could influence both critic and audience ratings, as well as box office revenue, we seek to unravel the elusive formula that transforms a film into a blockbuster. In an era where cinematic achievement is measured not only by artistic brilliance but also by financial prowess, our data-driven analysis positions itself as an indispensable tool for filmmakers, producers, and industry stakeholders.
 
-## Intro
+## Introduction
  
 Welcome to "Cinematic Alchemy: Ingredients for Movie Magic," a project unraveling the intricate web of factors shaping the success of films. This will be done through rigorous analysis of measures intrinsic to the movie such as its genre, the themes it contains and its duration. Some more external parameters will also be part of the study in particular the timing of its release. More precisely,  a closer look will be taken on the financial context as well as the release month in which the movie has entered the theatres.
+
+Concretely, we want to test the different relationships between the variables. The following causal diagrams illustrate the different links that will be investigated along the data story.
+
+<img src="assets/img/causal_diagram.jpeg" width=500px class="center"/>
 
 Through the scrolling of this website, you will acquire the knowledge that will promote you from a novice movie cooker to a gastronomic producer. 
 
@@ -24,17 +28,11 @@ Through the scrolling of this website, you will acquire the knowledge that will 
 
 One might wonder if it is really necessary to consider both metrics for success. It is a fair question to be asked since one could think that they reflect the same phenomenon. But before solving such a mystery, one needs to think about which rating would make sense. There are two main types: The critic score and the audience rating. Should we consider both?
 
-<img src="assets/img/success_correlation.png" width=2500px class="center"/>
+<img src="assets/img/box_office_rating_correlation.png" width=500px class="center"/>
 
 By standardising the data, one can read the correlation coefficients between the success metrics on the plot which is given by the slope of the line given by the OLS.
  
 Where the ratings are quite well correlated, the audience score doesn’t seem to have any link with the box office revenue. Therefore, we will keep track of the audience rating and of the financial metric.
-
-## Inflation revenue
-
-In order to compare movie revenue across the years, we need to take inflation into account. First, we obtain the inflation data from the CPI python library. We then create an inflated revenue column in our dataset, in which we adjust the box-office revenues of the films to today's values. In the next figure, we show that the mean of movie revenue across the years increases similarly as inflation. We observe a correlation of 0.9 with a p-value smaller than 0.05. 
-We will then carry out the remainder of our analysis on data relating to inflated revenues, in order to have similar data from one year to the next.
-
 
 ## Inflation analysis
 
