@@ -113,9 +113,15 @@ What is even more important is to look at the revenue of film per topic. This is
 <img src="assets/img/revenue_per_theme.png" width=500px class="center"/>
 
 ## Impact of Movie Length On Inflated Revenue
-As seen in our causal diagrams, we suspect that movie lengths influence the inflated revenue differently depending on the movie genre. We first compared movie lengths by categorising them as Short, Medium, Long and Very Long. Then we performed a 1-to-1 matching to get an equal quantity of same genre movies for very long and not very long movies. We do so such that a positive and negative influence on inflated revenue for 2 different movie genres don't cancel each other out: we want to observe both!🙂
+As seen in our causal diagrams, we suspect that movie length influences the inflated revenue in unique ways for different movie genres. We first categorised movie lengths as Short, Medium, Long and Very Long. To keep our length categories consistent and relevant, we make sure each bin contains a similar quantity of images and that the length corresponds to the bin title. Here short movies are under 75 minutes, medium movies are between 75 and 120 minutes, long movies are between 2 hours and 2.5 hours and very long movies are over 2.5 hours. Below we see that when the movie length increases, the mean inflated revenue tends to also increase for most movie genres. However, it would be nice to compare the means for equal quantities of movies of different lengths and of the same genre.
 
-<img src="assets/img/Mean_Revenue_Per_Genre.png" width=1000px class="center"/>
+<img src="assets/img/Mean_Revenue_Per_Genre_And_Length.png" width=1000px class="center"/>
+
+Then we performed a 1-to-1 matching to get an equal quantity of same genre movies for very long and long movies. We do so such that a positive and negative influence on inflated revenue for 2 different movie genres don't cancel eachother out: we want to observe both!🙂
+
+Below you can see the mean inflated revenue for each genre cluster we computed. More importantly, we take the mean for both long and very long movies contained in our one-to-one matching to get an equal quantity of long and very long movies for each genre cluster, in order to compare them and observe any financial effects of making longer and longer movies. We see that for the vast majority of genres, very long movies tend to make more mean inflated revenue than long movies. This aligns with what we predicted.
+
+<img src="assets/img/Mean_Revenue_Per_Genre_And_Length_Post_Matching.png" width=1000px class="center"/>
 
 
 
