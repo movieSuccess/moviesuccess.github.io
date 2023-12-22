@@ -101,8 +101,6 @@ Another way to get new insight on the success of a film is to look at their topi
 
 <img src="assets/img/topic_name.png" width=1500px class="center"/>
 
-With these wordcloud, we can see that most cluster can be used a thematic of film except “Behind the Scenes of Filmmaking” which shows that some movie plot used  
-
 Through the analysis of these word clouds, it becomes evident that the majority of lexicon align thematically with films. This is good news! However, a notable exception is found in the "Behind the Scenes of Filmmaking" lexicon, indicating that certain movie plots incorporate this vocabulary into their storyline, while others do not.
 Leveraging these lexicons, we can categorize films based on their themes, considering that a single film may fall into several thematic categories. This is quite interesting as we can gain new alchemy insight on one film success given its theme.
 
@@ -110,7 +108,7 @@ We'll explore the popularity of themes over the years. It's evident that war and
 
 <img src="assets/img/topic_distribution.png" width=1500px class="center"/>
 
-What is even more important is to look at the revenue of film per topic. This is really interesting! While some patterns can be seen in the next graph, we ran a regression using all topics to see their impact on the revenue and the results are exciting! With P-values of zero, we have that Adventure with Creatures, War and Action and Medieval Fantasy are the most profitable topics. While Life and Love Story and Family Bonds are definitely not the best topics to choose if you want to make money.
+What is even more important is to look at the revenue of film per topic. This is really interesting! While some patterns can be seen in the next graph, we ran a regression using all topics to see their impact on the revenue and the results are exciting! With p-values of zero, we have that Adventure with Creatures, War and Action and Medieval Fantasy are the most profitable topics. While Life and Love Story and Family Bonds are definitely not the best topics to choose if you want to make money.
 
 <img src="assets/img/revenue_per_theme.png" width=500px class="center"/>
 
