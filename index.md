@@ -118,10 +118,15 @@ As seen in our causal diagrams, we suspect that movie lengths influence the infl
 <img src="assets/img/Mean_Revenue_Per_Genre.png" width=1000px class="center"/>
 
 ## Impact of Release Month On Inflated Revenue
-We suspect that the coreleasing a movie in or outside of holiday seasons influences the inflated revenue differently depending on the movie genre. We first compared movie lengths by categorising them as Short, Medium, Long and Very Long. Then we performed a 1-to-1 matching to get an equal quantity of same genre movies for very long and not very long movies. 
+We suspect that the coreleasing a movie in or outside of holiday seasons influences the inflated revenue differently depending on the movie genre. We took June, July, November and December as our holiday months and built a one-to-one matching to get the same quantity of holiday and non-holiday releases for each genre. According to [Ampere Analysis](https://ampereanalysis.com/insight/seasonal-changes-in-the-genres-of-box-office-releases): "Film studios aim to take advantage of the Easter, summer and Christmas holidays by releasing light-hearted family-friendly films to which parents can take their children. These typically fall under the genres of action & adventure, comedy and animation". For this reason, we chose to study the effects of holiday release months on Action movies. 
+
 
 <img src="assets/img/Cluster_No_Holiday_Influence.png" width=1000px class="center"/>
 
+However from our boxplots, we see that whilst pre-matching action movies seemed to have a higher inflated revenue for holiday releases, the post-matching box plots show us that the inflated revenue is similar during and outside of the holiday season. This means that for an equal quantity of holiday and non-holiday released movies in the Action genre, the inflated revenue is not heavily influenced by a holiday / non-holiday release, we got the same conclusion from our regression values.
+
 <img src="assets/img/Cluster_Holiday_Influence.png" width=1000px class="center"/>
+
+Here the quote from Ampere Analysis makes far more sense, we clearly see that given a same quantity matching of holiday and non-holiday movies, the inflated revenue for comedy movies released in holiday months is far greater that the inflated revenue for comedy movies released outside of holiday months. This not only proves that comedy movies released during the holidays tend to make more, it also shows us that each genre can react quite differently depending on when it is released.
 
 ## Conclusion
