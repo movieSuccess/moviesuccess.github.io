@@ -25,7 +25,16 @@ Through the scrolling of this website, you will acquire the knowledge that will 
 Inflation revenue
 In order to compare movie revenue across the years, we need to take inflation into account. First, we obtain the inflation data from the CPI python library. Then, we create an inflated revenue column in our dataset, where we adapt the movie box office revenue in today’s value. We can therefore compare 
 
+## Inflation analysis
+
+In order to compare movie revenue across the years, we need to take inflation into account. First, we obtain the inflation data from the CPI python library. We then create an inflated revenue column in our dataset, in which we adjust the box-office revenues of the films to today's values. In the next figure, we show that the mean of movie revenue across the years increases similarly as inflation. We observe a correlation of 0.9 with a p-value smaller than 0.05. 
+We will then carry out the remainder of our analysis on data relating to inflated revenues, in order to have similar data from one year to the next.
+
+!{blablab}(assets/img/inflation.png)
+
 ## Financial analysis
+
+Our next analysis was to compare the financial environment. To define the financial environment, we use the S&P 500 index. The S&P 500 index represents the 500 largest American companies and is one of the most commonly used criteria for determining the state of the economy in general. We obtained some daily values of the index, which enabled us to determine a general context for the economy, using the total return over a certain period. We then determined 5 states of the economy, from very good to very bad, by dividing our returns into 5 equal quantiles. Then, for each film, we were able to assign it an economic context value, from 2 for very good to -2 for very bad. We were then able to regress box-office revenues against this economic context and observe whether there was a general trend towards higher revenues for films released in a good economic context. However, our analysis did not provide us with a p-value > 0.05, so we were unable to reject the null hypothesis that film and economic context are unrelated. Even by trying to change the number of months on which we wanted, or changing the size of the quantiles, we did not get meaningful results. 
 
 ## Genre clustering 
 
