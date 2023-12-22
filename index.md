@@ -63,21 +63,37 @@ Moreover, sticking with the Euclidean metric leads to much quicker execution tim
 
 Using silhouette analysis, we obtain an optimum of K = 16.
 We obtain the following clusters:
+
 1) History, Indie, Biography, Short Film, Documentary
+
 2) Comedy, Adventure, Action/Adventure, Action, Drama
+
 3) Comedy, Indie, Black-and-white, Short Film, Silent film
+
 4) Indie, Crime Fiction, Comedy, World cinema, Drama
+
 5) Drama, Comedy, Black-and-white, Romance Film, Short Film
+
 6) Romance Film, Drama, Musical, World cinema, Bollywood
+
 7) Family Film, Drama, Musical, Romance Film, Comedy
+
 8) World cinema, Comedy, Romantic drama, Romance Film, Drama
+
 9) Short Film, Indie, Drama, Silent film, Black-and-white
+
 10) Family Film, Romance Film, Comedy film, Short Film, Animation
+
 11) Indie, Family Film, Comedy, Romance Film, Romantic comedy
+
 12) Drama, Crime Fiction, Action/Adventure, Thriller, Action
+
 13) Crime Thriller, Mystery, Crime Fiction, Drama, Thriller
+
 14) Indie, Thriller, World cinema, Science Fiction, Horror
+
 15) Animation, Fantasy, Family Film, Adventure, Drama
+
 16) War film, Romance Film, Crime Fiction, Drama, Black-and-white
 
 After we obtain clusters, we analyse the differences in each of our success metrics between clusters.
