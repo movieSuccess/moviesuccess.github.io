@@ -24,7 +24,7 @@ navbar-links:
   Resources:
     - The dataset: "http://www.cs.cmu.edu/~ark/personas/"
   About:
-    - The project: "./aboutme.md"
+    - The project: "aboutme.md"
 
 ################
 # --- Logo --- #
