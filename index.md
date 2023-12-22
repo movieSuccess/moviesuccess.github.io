@@ -30,7 +30,7 @@ In order to compare movie revenue across the years, we need to take inflation in
 In order to compare movie revenue across the years, we need to take inflation into account. First, we obtain the inflation data from the CPI python library. We then create an inflated revenue column in our dataset, in which we adjust the box-office revenues of the films to today's values. In the next figure, we show that the mean of movie revenue across the years increases similarly as inflation. We observe a correlation of 0.9 with a p-value smaller than 0.05. 
 We will then carry out the remainder of our analysis on data relating to inflated revenues, in order to have similar data from one year to the next.
 
-!{blablab}(assets/img/inflation.png)
+<img src="assets/img/inflation.png" height=600px width=600px class="center"/>
 
 ## Financial analysis
 
