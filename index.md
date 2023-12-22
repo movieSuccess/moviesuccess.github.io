@@ -20,7 +20,7 @@ Welcome to "Cinematic Alchemy: Ingredients for Movie Magic," a project unravelin
 
 Concretely, we want to test the different relationships between the variables. The following causal diagrams illustrate the different links that will be investigated along the data story.
 
-<img src="assets/img/causal_diagram.jpg" width=500px class="center"/>
+<img src="assets/img/causal_diagram.jpg" width=1500px class="center"/>
 
 Through the scrolling of this website, you will acquire the knowledge that will promote you from a novice movie cooker to a gastronomic producer. 
 
@@ -83,7 +83,7 @@ After we obtain clusters, we analyse the differences in each of our success metr
 
 Another way to get new insight on the success of a film is to look at their topic. For this, we used natural language processing techniques on the plot of movies such as LDA and got 11 topic clusters, each characterised by a lexicon of words. These lexicons are shown in the next graph and the title for these clusters were generated using ChatGPT given the first 20 most important words.
 
-<img src="assets/img/topic_name.png" width=500px class="center"/>
+<img src="assets/img/topic_name.png" width=1500px class="center"/>
 
 With these wordcloud, we can see that most cluster can be used a thematic of film except “Behind the Scenes of Filmmaking” which shows that some movie plot used  
 
@@ -92,7 +92,7 @@ Leveraging these lexicons, we can categorize films based on their themes, consid
 
 We'll explore the popularity of themes over the years. It's evident that war and military films held significant appeal from 1940 to 1970. This is probably related to propaganda film during WW2 and the Cold War. Simultaneously, family dramas emerged as a prolific thematic genre, with a notable increase in film production in the 70s.
 
-<img src="assets/img/topic_distribution.png" width=500px class="center"/>
+<img src="assets/img/topic_distribution.png" width=1500px class="center"/>
 
 What is even more important is to look at the revenue of film per topic. This is really interesting! While some patterns can be seen in the next graph, we ran a regression using all topics to see their impact on the revenue and the results are exciting! With P-values of zero, we have that Adventure with Creatures, War and Action and Medieval Fantasy are the most profitable topics. While Life and Love Story and Family Bonds are definitely not the best topics to choose if you want to make money.
 
