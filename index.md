@@ -24,7 +24,7 @@ Through the scrolling of this website, you will acquire the knowledge that will 
 
 One might wonder if it is really necessary to consider both metrics for success. It is a fair question to be asked since one could think that they reflect the same phenomenon. But before solving such a mystery, one needs to think about which rating would make sense. There are two main types: The critic score and the audience rating. Should we consider both?
 
-<img src="assets/img/success_correlation.png" width=1400px class="center"/>
+<img src="assets/img/success_correlation.png" width=2500px class="center"/>
 
 By standardising the data, one can read the correlation coefficients between the success metrics on the plot which is given by the slope of the line given by the OLS.
  
