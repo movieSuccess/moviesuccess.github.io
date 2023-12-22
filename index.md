@@ -31,7 +31,10 @@ By standardising the data, one can read the correlation coefficients between the
 Where the ratings are quite well correlated, the audience score doesn’t seem to have any link with the box office revenue. Therefore, we will keep track of the audience rating and of the financial metric.
 
 ## Inflation revenue
-In order to compare movie revenue across the years, we need to take inflation into account. First, we obtain the inflation data from the CPI python library. Then, we create an inflated revenue column in our dataset, where we adapt the movie box office revenue in today’s value. We can therefore compare 
+
+In order to compare movie revenue across the years, we need to take inflation into account. First, we obtain the inflation data from the CPI python library. We then create an inflated revenue column in our dataset, in which we adjust the box-office revenues of the films to today's values. In the next figure, we show that the mean of movie revenue across the years increases similarly as inflation. We observe a correlation of 0.9 with a p-value smaller than 0.05. 
+We will then carry out the remainder of our analysis on data relating to inflated revenues, in order to have similar data from one year to the next.
+
 
 ## Inflation analysis
 
@@ -40,14 +43,36 @@ We will then carry out the remainder of our analysis on data relating to inflate
 
 <img src="assets/img/inflation.png" width=500px class="center"/>
 
-## Financial analysis
+## Financial analysis 
 
-Our next analysis was to compare the financial environment. To define the financial environment, we use the S&P 500 index. The S&P 500 index represents the 500 largest American companies and is one of the most commonly used criteria for determining the state of the economy in general. We obtained some daily values of the index, which enabled us to determine a general context for the economy, using the total return over a certain period. We then determined 5 states of the economy, from very good to very bad, by dividing our returns into 5 equal quantiles. Then, for each film, we were able to assign it an economic context value, from 2 for very good to -2 for very bad. We were then able to regress box-office revenues against this economic context and observe whether there was a general trend towards higher revenues for films released in a good economic context. However, our analysis did not provide us with a p-value > 0.05, so we were unable to reject the null hypothesis that film and economic context are unrelated. Even by trying to change the number of months on which we wanted, or changing the size of the quantiles, we did not get meaningful results. 
+Our next analysis was to compare the financial environment. To define the financial environment, we use the S&P 500 index. The S&P 500 index represents the 500 largest American companies and is one of the most commonly used criteria for determining the state of the economy in general. We obtained some daily values of the index, which enabled us to determine a general context for the economy, using the total return over a certain period. We then determined 5 states of the economy, from very good to very bad, by dividing our returns into 5 equal quantiles. Then, for each film, we were able to assign it an economic context value, from 2 for very good to -2 for very bad. We were then able to regress box-office revenues against this economic context and observe whether there was a general trend towards higher revenues for films released in a good economic context. However, our analysis did not provide us with a p-value > 0.05, so we were unable to reject the null hypothesis that film and economic context are unrelated. 
+Even when we tried to change the number of months over which we calculated returns, or by changing the size of the quantiles, we did not obtain significant results. We can therefore assume that films are a good sector for protecting against crises. However, a more detailed analysis should be carried out to confirm this hypothesis.
+
 
 ## Genre clustering 
+
+As we want to compare our various success metrics across genres, we need a way to cluster the movies by their assigned set of genres.
+Indeed, the set of genres for each movie will partition the dataset in subsets that are too small for any statistically significant analysis.
+
+Hence, we explore various approaches for clustering our movies along genres.
+A natural approach is to use the Jaccard distance, as each of our movies have an entire set of genres instead of a single genre assigned to them.
+However, K-means clustering implementations usually do not support smart centroid initialization techniques such as KMeans++ for the Jaccard distance, and coming up with one is out of the scope of this project.
+Moreover, sticking with the Euclidean metric leads to much quicker execution times.
+
+After we obtain clusters, we analyse the differences in each of our success metrics between clusters.
+
 
 ## Topic clustering
 
 Another way to get new insight on the success of a film is to look at their topic. For this, we used natural language processing techniques on the plot of movies such as LDA and got 11 topic clusters, each characterised by a lexicon of words. These lexicons are shown in the next graph and the title for these clusters were generated using ChatGPT given the first 20 most important words.
 
+<img src="assets/img/topic_name.png" width=500px class="center"/>
+
 With these wordcloud, we can see that most cluster can be used a thematic of film except “Behind the Scenes of Filmmaking” which shows that some movie plot used  
+
+Through the analysis of these word clouds, it becomes evident that the majority of lexicon align thematically with films. This is good news! However, a notable exception is found in the "Behind the Scenes of Filmmaking" lexicon, indicating that certain movie plots incorporate this vocabulary into their storyline, while others do not.
+Leveraging these lexicons, we can categorize films based on their themes, considering that a single film may fall into several thematic categories. This is quite interesting as we can gain new alchemy insight on one film success given its theme.
+
+We'll explore the popularity of themes over the years. It's evident that war and military films held significant appeal from 1940 to 1970. This is probably related to propaganda film during WW2 and the Cold War. Simultaneously, family dramas emerged as a prolific thematic genre, with a notable increase in film production in the 70s.
+
+<img src="assets/img/topic_distribution.png" width=500px class="center"/>
