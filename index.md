@@ -133,7 +133,7 @@ What is even more important is to look at the revenue of film per topic. This is
 <img src="assets/img/revenue_per_theme.png" width=500px class="center"/>
 
 ## Impact of Movie Length On Inflated Revenue
-As seen in our causal diagrams, we suspect that movie lengths influence the inflated revenue differently depending on the movie genre. We first compared movie lengths by categorising them as Short, Medium, Long and Very Long. Then we performed a 1-to-1 matching to get an equal quantity of same genre movies for very long and not very long movies. We do so such that a positive and negative influence on inflated revenue for 2 different movie genres don't cancel eachother out: we want to observe both!🙂
+As seen in our causal diagrams, we suspect that movie lengths influence the inflated revenue differently depending on the movie genre. We first compared movie lengths by categorising them as Short, Medium, Long and Very Long. Then we performed a 1-to-1 matching to get an equal quantity of same genre movies for very long and not very long movies. We do so such that a positive and negative influence on inflated revenue for 2 different movie genres don't cancel each other out: we want to observe both!🙂
 
 ## Impact of Release Month On Inflated Revenue
 We suspect that the coreleasing a movie in or outside of holiday seasons influence the inflated revenue differently depending on the movie genre. We first compared movie lengths by categorising them as Short, Medium, Long and Very Long. Then we performed a 1-to-1 matching to get an equal quantity of same genre movies for very long and not very long movies. 
