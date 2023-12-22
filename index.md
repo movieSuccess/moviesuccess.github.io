@@ -143,11 +143,18 @@ One key success factor of a film is definitely its actors, however it is really 
 
 <img src="assets/img/Tom_cruise.png" width=500px class="center"/>
 
+With this, we then use 3 features for each movie: the actor score revenue of the top 3 actors. We can then make a regression and the results are quite convincing with a Rsquared of 0.12 and p-values of 0.0! Even more surprisingly, the second actor score is the most important meaning that you need to have 2 good actors to make a good movie! Then the third one is still increasing the odds of making a good movie but not as much as the second one. To visualise this we used a PCA on these 3 features and make a graph with the first component and the inflated revenue. With a density plot we can see clearly where the actors are located and that the first component is correlated with the inflated revenue!
 
 
-<img src="assets/img/inflated_vs_pca.png" width=1000px class="center"/>
-
-
+<img src="assets/img/inflated_vs_pca.png" width=500px class="center"/>
 
 
 ## Conclusion
+
+"Cinematic Alchemy: Ingredients for Movie Magic" attempted to unravel the complex dynamics of film success, blending artistic brilliance with financial viability. Our data-driven analysis explored correlations between movie attributes and different success metrics and assessed the impact of several factors, including economic contexts, themes, or movie length.
+
+<img src="assets/img/camera_cloud.png" width=500px class="center"/>
+
+Throughout our analysis, the robustness of the movie industry to economic fluctuations has been highlighted, making the seventh art a solid business during uncertain financial periods. In terms of genre, the movies have been splitted into 16 different types using a clustering algorithm. In particular, relationships between this attribute and the box office revenue have been discovered. In particular, the Fantasy/Animation as well as the Drama/Crime Fiction categories tend to have higher financial success. A deeper dive would be needed to determine the causal nature of this link. To refine the research, an additional clustering on the topic has been conducted using movies’ plots which lead to 11 distinct groups. Based on that, some analysis brought to light a prevalence of war themed films between 1940 and 1970. Through the lens of a businessman, we noticed that the themes Adventure with Creatures, War and Military Action and Medieval Fantasy were the most financially attractive. The next analysis was focusing on the length of the movie. As a result, the revenue turned out to be higher for very long movies compared with just long movies. Looking for the ideal timing of release, some data exploration and manipulation has been performed. From this study, we can conclude that, for certain genres, distributing moves during the holidays tends to make more money. In addition, the revenue difference between holidays and non-holidays periods can differ depending on the genre. Finally, a compelling link between successful actors and the financial success of a movie by performing a linear regression. There’s a strong relation between the presence of a second famous actor and the box office revenue.
+
+The study presented key relations between movie success and several internal and external factors. While no foolproof formula emerged, "Cinematic Alchemy" equips filmmakers and industry stakeholders with valuable insights, guiding them through the intricate landscape of the film industry. As the cinematic saga continues, this project stands as a significant contribution to understanding the magic behind movie success.
