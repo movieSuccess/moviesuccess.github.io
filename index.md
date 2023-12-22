@@ -122,6 +122,6 @@ We suspect that the coreleasing a movie in or outside of holiday seasons influen
 
 <img src="assets/img/Cluster_No_Holiday_Influence.png" width=1000px class="center"/>
 
-<img src="assets/img/Cluster_No_Holiday_Influence.png" width=1000px class="center"/>
+<img src="assets/img/Cluster_Holiday_Influence.png" width=1000px class="center"/>
 
 ## Conclusion
