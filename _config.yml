@@ -22,7 +22,9 @@ author: Madafaka1
 
 navbar-links:
   Resources:
-    - The dataset: "http://www.cs.cmu.edu/~ark/personas/"
+    - The CMU dataset: "http://www.cs.cmu.edu/~ark/personas/"
+    - The Movies dataset: "www.kaggle.com/datasets/rounakbanik/the-movies-dataset/"
+    - Rotten Tomatoes: "www.rottentomatoes.com/"
   About:
     - The project: /about/
 
