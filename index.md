@@ -137,4 +137,17 @@ However from our boxplots, we see that whilst pre-matching action movies seemed 
 
 We now carry out the same analysis for comedy movies. Here the quote from Ampere Analysis makes far more sense, we clearly see that given a same quantity matching of holiday and non-holiday movies, the inflated revenue for comedy movies released in holiday months is far greater that the inflated revenue for comedy movies released outside of holiday months. This not only proves that comedy movies released during the holidays tend to make more, it also shows us that each genre can react quite differently depending on when it is released.
 
+## Actor success score
+
+One key success factor of a film is definitely its actors, however it is really difficult to measure how actors influence our metrics. Indeed, how can we score one actor? Our idea is to use the revenue of the movies the actor played in before the movie we are looking at. To see this in action, we can look at Tom cruise movies as an example. We can see that the actor score revenue is kind of following the box office revenue of a movie.
+
+<img src="assets/img/Tom_cruise.png" width=500px class="center"/>
+
+
+
+<img src="assets/img/inflated_vs_pca.png" width=1000px class="center"/>
+
+
+
+
 ## Conclusion
