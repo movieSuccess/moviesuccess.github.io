@@ -82,6 +82,15 @@ Short Film, Indie, Drama, Silent film, Black-and-white
 
 After we obtain clusters, we analyse the differences in each of our success metrics between clusters.
 
+<img src="assets/img/genre_audience_boxplot.png" width=500px class="center"/>
+<img src="assets/img/genre_tomatometer_boxplot.png" width=500px class="center"/>
+<img src="assets/img/genre_revenue_boxplot.png" width=500px class="center"/>
+
+As expected, musical comedies score high in the audience rating, while artsy and older movies (black and white, history and indie movies) score higher in the critic rating. Regarding the revenue, the highest grossing genres are fantasy and crime fiction, which include genre-defining movies such as Snow white, which is the highest grossing movie of all time, as well as blockbusters such as Avatar.
+
+After fitting a linear regression model for each metric, using the genre cluster as a categorical predictor, we observe that while the genre isn't a good predictor for the revenue (reaching an R²-value of 0.052), it seems to be influencing both the audience and critics rating, with R²-values of 0.132 and 0.111, respectively. However, further analysis is needed to conclude the existence of a causal relationship.
+
+
 ## Topic clustering
 
 Another way to get new insight on the success of a film is to look at their topic. For this, we used natural language processing techniques on the plot of movies such as LDA and got 11 topic clusters, each characterised by a lexicon of words. These lexicons are shown in the next graph and the title for these clusters were generated using ChatGPT given the first 20 most important words.
