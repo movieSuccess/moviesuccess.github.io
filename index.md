@@ -26,17 +26,14 @@ Using the topics allows us to have a more fine-grained classification of movies 
 <img src="assets/img/causal_diagram.jpg" class="center"/>
 
 
-To compile the necessary data, we integrated information from three datasets. The initial dataset is sourced from the CMU Movie Summary Corpus (<url src=https://www.cs.cmu.edu/~ark/personas/ />), providing details on films for analysis including their plot, actors, and certain box office revenue figures. To increase the number of films with available box office data, we incorporated The Movies Dataset (<url src=https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset/ />), which includes information on film budgets and revenues. Additionally, we conducted web scraping on the Rotten Tomatoes website (<url src=https://www.rottentomatoes.com/ />) to recover the critics. You can also find these link later in the resources tab in the navigation bar.
+To compile the necessary data, we integrated information from three datasets. The initial dataset is sourced from the CMU Movie Summary Corpus (<url src=https://www.cs.cmu.edu/~ark/personas/ />), providing details on films for analysis including their plot, actors, and certain box office revenue figures. To increase the number of films with available box office data, we incorporated The Movies Dataset (<url src=https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset/ />), which includes information on film budgets and revenues. Additionally, we conducted web scraping on the Rotten Tomatoes website (<url src=https://www.rottentomatoes.com/ />) to recover the critics. You can also find these link later in the resources tab in the navigation bar. 
 
-Through the scrolling of this website, you will acquire the knowledge that will promote you from a novice movie cooker to a gastronomic producer. 
-
-## Complementary metrics for a success of your taste
+## Correlation between success types
 
 One might wonder if it is really necessary to consider both metrics for success. It is a fair question to be asked since one could think that they reflect the same phenomenon. But before solving such a mystery, one needs to think about which rating would make sense. There are two main types: The critic score and the audience rating. Should we consider both?
 
-<img src="assets/img/box_correlation.png" width=500px class="center"/>
 <img src="assets/img/ratings_correlation.png" width=500px class="center"/>
-
+<img src="assets/img/box_correlation.png" width=500px class="center"/>
 
 By standardising the data, one can read the correlation coefficients between the success metrics on the plot which is given by the slope of the line given by the OLS.
  
@@ -93,7 +90,7 @@ After we obtain clusters, we analyse the differences in each of our success metr
 <img src="assets/img/genre_tomatometer_boxplot.png" width=500px class="center"/>
 <img src="assets/img/genre_revenue_boxplot.png" width=500px class="center"/>
 
-As expected, musical comedies score high in the audience rating, while artsy and older movies (black and white, history and indie movies) score higher in the critic rating. Regarding the revenue, the highest grossing genres are fantasy and crime fiction, which include genre-defining movies such as Snow white, which is the highest grossing movie of all time, as well as blockbusters such as Avatar.
+As expected, musical comedies score high in the audience rating, while artsy and older movies (black and white, history and indie movies) score higher in the critic rating. Regarding the revenue, the highest grossing genres are fantasy and crimegi fiction, which include genre-defining movies such as Snow white, which is the highest grossing movie of all time, as well as blockbusters such as Avatar.
 
 After fitting a linear regression model for each metric, using the genre cluster as a categorical predictor, we observe that while the genre isn't a good predictor for the revenue (reaching an R²-value of 0.052), it seems to be influencing both the audience and critics rating, with R²-values of 0.132 and 0.111, respectively. However, further analysis is needed to conclude the existence of a causal relationship.
 
@@ -122,3 +119,5 @@ As seen in our causal diagrams, we suspect that movie lengths influence the infl
 
 ## Impact of Release Month On Inflated Revenue
 We suspect that the coreleasing a movie in or outside of holiday seasons influence the inflated revenue differently depending on the movie genre. We first compared movie lengths by categorising them as Short, Medium, Long and Very Long. Then we performed a 1-to-1 matching to get an equal quantity of same genre movies for very long and not very long movies. 
+
+## Conclusion
