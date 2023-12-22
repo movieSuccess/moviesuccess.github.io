@@ -39,7 +39,8 @@ Where the ratings are quite well correlated, the audience score doesn’t seem t
 ## Inflation analysis
 
 In order to compare movie revenue across the years, we need to take inflation into account. First, we obtain the inflation data from the CPI python library. We then create an inflated revenue column in our dataset, in which we adjust the box-office revenues of the films to today's values. In the next figure, we show that the mean of movie revenue across the years increases similarly as inflation. We observe a correlation of 0.9 with a p-value smaller than 0.05. 
-We will then carry out the remainder of our analysis on data relating to inflated revenues, in order to have similar data from one year to the next.
+We can see some interesting facts in this figure. Firstly, the average box office revenue for movies prior to 1950 are quite noisy. There are two reasons for this: firstly, we have a smaller number of films for these periods and, as a result, a film with very high revenues will have a considerable impact on the average for the current year. Secondly, some films from these years (such as Disney hits Bambi or Snow White) have been remade over the years, but their box office takings have been counted in the original version. After these noisy parts, we see a clear increase around 1960, while there is no particular increase in the measure of inflation. This period of high incomes lasted until around 1980, when we see a slight decline, combined with a period of high inflation.  This implies the end of this golden age of cinema. Thereafter, we see what appears to be a fairly similar increase between average film revenues and inflation.
+
 
 <img src="assets/img/inflation_analysis.png" width=500px class="center"/>
 
