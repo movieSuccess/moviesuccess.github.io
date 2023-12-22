@@ -18,9 +18,15 @@ Through meticulous examination of movie data which could influence both critic a
  
 Welcome to "Cinematic Alchemy: Ingredients for Movie Magic," a project unraveling the intricate web of factors shaping the success of films. This will be done through rigorous analysis of measures intrinsic to the movie such as its genre, the themes it contains and its duration. Some more external parameters will also be part of the study in particular the timing of its release. More precisely,  a closer look will be taken on the financial context as well as the release month in which the movie has entered the theatres.
 
-Concretely, we want to test the different relationships between the variables. The following causal diagrams illustrate the different links that will be investigated along the data story.
+Concretely, we want to test the different relationships between the variables. The following causal diagrams illustrate the different links that will be investigated along the data story. For each variable, we defined the type of success it could affect. Our success was defined in three ways: the audience rating, which is the rating given by normal people like you and me. We also use the critics' rating. Both of these ratings are obtained through the Rotten Tomatoes database. Another measure of success that we wanted to study is box-office revenue. For the internal elements likely to affect the success of a film, we used the length of the film, the genre, which is the overall type of film, and the subject, which are the themes present in the film.
+Using the topics allows us to have a more fine-grained classification of movies for constructing our paired matchings. Moreover, while the genres are clustered, we are able to obtain non-disjoint topic labels which more accurately reflect the structure of the dataset. Finally, we want to assess whether the actors have an impact on the film's revenue.
+
+
 
 <img src="assets/img/causal_diagram.jpg" class="center"/>
+
+
+To compile the necessary data, we integrated information from three datasets. The initial dataset is sourced from the CMU Movie Summary Corpus (https://www.cs.cmu.edu/~ark/personas/), providing details on films for analysis including their plot, actors, and certain box office revenue figures. To increase the number of films with available box office data, we incorporated The Movies Dataset (https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset/), which includes information on film budgets and revenues. Additionally, we conducted web scraping on the Rotten Tomatoes website (https://www.rottentomatoes.com/) to recover the critics.
 
 Through the scrolling of this website, you will acquire the knowledge that will promote you from a novice movie cooker to a gastronomic producer. 
 
